@@ -1,12 +1,15 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 
 import Button from "../components/Button";
 import { words } from "../constants";
 import HeroExperience from "../components/models/Hero_Models/HeroExperience";
+import AnimatedCounter from "../components/AnimatedCounter";
 
 
 const Hero = () => {
@@ -73,6 +76,8 @@ const Hero = () => {
           </div>
         </figure>
       </div>
+      <AnimatedCounter />
+
 
      
     </section>
